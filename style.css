@@ -185,6 +185,7 @@ p {
 /* ----------about---------- */
 .about-img-container {
   position: relative;
+  width: 100%;
   aspect-ratio: 404 / 300;
   z-index: 2;
 }
