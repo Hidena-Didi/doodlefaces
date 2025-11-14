@@ -1,6 +1,8 @@
 html {
   font-size: 18px;
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 * {
   margin: 0;
