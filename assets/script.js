@@ -1,12 +1,3 @@
-//------Root redirects based on browser language
-
-const lang = navigator.language || navigator.userLanguage;
-if (lang.startsWith("fr")) {
-  window.location.href = "/fr/";
-} else {
-  window.location.href = "/en/";
-}
-
 //------parallax effect
 
 const heroImg = document.querySelector(".hero-img");

@@ -165,7 +165,7 @@ p {
 .menu-bar {
   width: auto;
   height: 100%;
-  background: center / contain no-repeat url("../assets/img/PaintDrip.png");
+  background: center / contain no-repeat url("img/PaintDrip.png");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,7 +262,7 @@ p {
 .rates-img {
   position: relative;
   width: 100%;
-  background: url("../assets/img/BackgroundSplash2.svg") no-repeat left top / cover;
+  background: url("img/BackgroundSplash2.svg") no-repeat left top / cover;
   z-index: 2;
   aspect-ratio: 399 / 207;
 }
@@ -326,7 +326,7 @@ p {
 .contact-img {
   position: relative;
   width: 100%;
-  background: url("../assets/img/BackgroundSplash4.webp") no-repeat left top / cover;
+  background: url("img/BackgroundSplash4.webp") no-repeat left top / cover;
   z-index: 7;
   aspect-ratio: 404 / 293;
 }
