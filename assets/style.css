@@ -53,6 +53,15 @@ h3 {
 #h2-home {
   color: rgba(117, 103, 79, 1);
 }
+#a-lang{
+  display: block;
+  font-size: 1rem;
+  color: rgba(117, 103, 79, 1);
+  font-weight: 800;
+  margin:0;
+  text-align: center;
+  line-height: 2rem;
+}
 p {
   margin: 2rem 0;
 }
@@ -106,10 +115,14 @@ p {
   right: -5rem;
   width: 65vw;
   height: 150vh;
-  background: url("img/DinoFacePaint.webp");
+  background: url("../assets/img/DinoFacePaint.webp");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
+}
+#header-container{
+  display: flex;
+  justify-content: space-between;
 }
 .menu-box {
   width: 50%;
@@ -152,7 +165,7 @@ p {
 .menu-bar {
   width: auto;
   height: 100%;
-  background: center / contain no-repeat url("img/PaintDrip.png");
+  background: center / contain no-repeat url("../assets/img/PaintDrip.png");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,8 +179,35 @@ p {
   animation: appear 1s forwards;
   animation-delay: 1s;
 }
-#logo :hover {
+.language-choice1{
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.language-choice2 {
+  display: none ;
+  width: 100%;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+.lang-background{
+  width: 3rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo:hover {
   animation: shake 1s infinite;
+}
+.lang-background:hover {
+  border: solid 2px #615642;
+  cursor: pointer;
 }
 /* ----------home---------- */
 #container-home {
@@ -214,6 +254,7 @@ p {
 /* ----------rates---------- */
 #sectionRates {
   position: relative;
+  padding-top: 12%;
   padding-bottom: 20%;
   background-color: white;
   z-index: 4;
@@ -221,7 +262,7 @@ p {
 .rates-img {
   position: relative;
   width: 100%;
-  background: url("img/BackgroundSplash2.svg") no-repeat left top / cover;
+  background: url("../assets/img/BackgroundSplash2.svg") no-repeat left top / cover;
   z-index: 2;
   aspect-ratio: 399 / 207;
 }
@@ -285,7 +326,7 @@ p {
 .contact-img {
   position: relative;
   width: 100%;
-  background: url("img/BackgroundSplash4.webp") no-repeat left top / cover;
+  background: url("../assets/img/BackgroundSplash4.webp") no-repeat left top / cover;
   z-index: 7;
   aspect-ratio: 404 / 293;
 }
@@ -481,7 +522,7 @@ footer {
   .container {
     width: 80%;
   }
-  .menu-box {
+  .menu-box .language-choice1 {
     height: 8rem;
   }
   .hero-img {
@@ -685,7 +726,24 @@ footer {
     padding-bottom: 50%;
   }
 }
+@media only screen and (max-width: 600px) {
+  #a-lang {
+    font-size: 0.8rem;
+  }
+  .language-choice1{
+    display: none;
+  }
+  .language-choice2{
+    display: flex; 
+  }
+  .menu-box {
+    height: 7rem;
+  }
+}
 @media only screen and (max-width: 500px) {
+  #h1-fr {
+      font-size: 3.1rem;
+    }
   .hero-img {
     left: -18%;
   }
