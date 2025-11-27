@@ -420,6 +420,14 @@ footer {
 .footer-links {
   width: fit-content;
 }
+#a-didiweb{
+  display: inline;
+  text-decoration: underline;
+  color: black;
+}
+#a-didiweb:hover {
+  font-weight: 900;
+}
 /* ----------animation---------- */
 @keyframes paintDrip {
   0% {
